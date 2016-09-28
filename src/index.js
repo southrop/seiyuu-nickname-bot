@@ -9,17 +9,16 @@ let stream = Twitter.stream();
 
 stream.on('tweet', (payload) => {
   let request_tweet = new RequestTweet(payload);
-  console.log(payload);
 
   if (request_tweet.shouldReply()) {
-    let nickname = db.getNickname(request_tweet.getText());
-    if (!nickname) {
-      return;
-    }
-    if (nickname.constructor === Array) {
-      nickname = nickname.join(', ')
-    }
-    Twitter.reply(new ReplyTweet(request_tweet, nickname));
+    db.getNickname(request_tweet.getText())
+      .then(nickname => {
+        if (!nickname) {
+          return;
+        }
+        Twitter.reply(new ReplyTweet(request_tweet, nickname));
+      })
+      .catch(error => console.log(error));
   }
 });
 
