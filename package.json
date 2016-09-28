@@ -1,0 +1,25 @@
+{
+  "name": "seiyuu",
+  "version": "0.1.0",
+  "description": "Seiyuu Nicknames",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "`npm bin`/nf start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/southrop/seiyuu"
+  },
+  "author": "southrop <southrop113@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/southrop/seiyuu/issues"
+  },
+  "homepage": "https://github.com/southrop/seiyuu#readme",
+  "dependencies": {
+    "guesslanguage": "^0.2.0",
+    "twit": "^2.2.5"
+  },
+  "devDependencies": {
+    "foreman": "^2.0.0"
+  }
+}
