@@ -36,7 +36,7 @@ describe('Utils', () => {
         Inorin: 'Minase Inori',
         Inosuke: 'Minase Inori'
       };
-      let string = 'somE mINasE InORi STrING';
+      let string = 'somE raNDOM InORin STrING';
       let result = util.matchString(string, data);
 
       assert.equal(result, 'Minase Inori');
