@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "description": "Seiyuu Nicknames",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "reply": "`npm bin`/nf start"
+    "test": "`npm bin`/eslint . && `npm bin`/mocha --recursive",
+    "reply": "`npm bin`/nf start",
+    "lint": "`npm bin`/eslint .",
+    "mocha": "`npm bin`/mocha --recursive"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
     "twit": "^2.2.5"
   },
   "devDependencies": {
-    "foreman": "^2.0.0"
+    "eslint": "^3.6.1",
+    "foreman": "^2.0.0",
+    "mocha": "^3.1.0"
   }
 }
