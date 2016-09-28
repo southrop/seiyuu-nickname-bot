@@ -17,6 +17,7 @@
   "homepage": "https://github.com/southrop/seiyuu#readme",
   "dependencies": {
     "guesslanguage": "^0.2.0",
+    "mongojs": "^2.4.0",
     "twit": "^2.2.5"
   },
   "devDependencies": {

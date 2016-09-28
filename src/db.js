@@ -3,7 +3,6 @@
 const mongojs = require('mongojs')
 const db = mongojs(process.env.MONGODB_URI, ['nicknames'])
 
-//const data = require('../data/nicknames.json');
 var data = null;
 var last_update = null;
 
